@@ -1,0 +1,35 @@
+{
+  "kind": "build_request",
+  "title": "Rename sidebar menu item from 'Fan Controller Dashboard' to 'Dashboard'",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "In the SidebarNav component, change the label of the first menu item from 'Fan Controller Dashboard' to 'Dashboard'.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "change menu name Fan Controller Dashboard to \"Dashboard\" only"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The sidebar navigation displays 'Dashboard' as the label for the first menu item.",
+        "No other menu item labels are changed.",
+        "The navigation functionality remains intact."
+      ]
+    }
+  ],
+  "constraints": [],
+  "nonGoals": [
+    "Changing the page title in index.html",
+    "Renaming any page component files",
+    "Modifying any other menu item labels"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

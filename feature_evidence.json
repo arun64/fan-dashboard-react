@@ -1,0 +1,23 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-in-the-sidebarnav-component-change-the-label-of-the-first-menu-item-from-fan-controller-dashboard-to-dashboard",
+      "featureTitle": "In the SidebarNav component, change the label of the first menu item from 'Fan Controller Dashboard' to 'Dashboard'.",
+      "files": [
+        "frontend/src/components/nav/SidebarNav.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Mono:wght@400;500&display=swap');
+
+@layer base {
+    :root {
+        --radius: 0.5rem;
+
+        /* Deep teal + slate professional theme */
+        --background: 0.97 0.008 200;
+        --foreground: 0.18 0.025 220;
+
+        --card: 1 0.004 200;
+        --card-foreground: 0.18 0.025 220;
+
+        --popover: 1 0.004 200;
+        --popover-foreground: 0.18 0.025 220;
+
+        /* Primary: deep teal */
+        --primary: 0.42 0.10 200;
+        --primary-foreground: 0.98 0.004 200;
+
+        /* Secondary: slate blue */
+        --secondary: 0.88 0.025 220;
+        --secondary-foreground: 0.28 0.04 220;
+
+        --muted: 0.93 0.012 210;
+        --muted-foreground: 0.50 0.025 215;
+
+        /* Accent: warm amber */
+        --accent: 0.72 0.14 65;
+        --accent-foreground: 0.18 0.04 65;
+
+        --destructive: 0.55 0.20 25;
+        --destructive-foreground: 0.98 0.004 25;
+
+        --border: 0.88 0.018 210;
+        --input: 0.88 0.018 210;
+        --ring: 0.42 0.10 200;
+
+        /* Charts: teal, amber, slate, coral, sage */
+        --chart-1: 0.52 0.12 195;
+        --chart-2: 0.68 0.14 65;
+        --chart-3: 0.55 0.08 240;
+        --chart-4: 0.62 0.16 30;
+        --chart-5: 0.58 0.10 155;
+
+        /* Sidebar: slightly deeper than background */
+        --sidebar: 0.22 0.04 215;
+        --sidebar-foreground: 0.90 0.012 210;
+        --sidebar-primary: 0.62 0.12 195;
+        --sidebar-primary-foreground: 0.98 0.004 200;
+        --sidebar-accent: 0.72 0.14 65;
+        --sidebar-accent-foreground: 0.18 0.04 65;
+        --sidebar-border: 0.30 0.04 215;
+        --sidebar-ring: 0.62 0.12 195;
+
+        /* Semantic */
+        --success: 0.55 0.14 155;
+        --success-foreground: 0.98 0.004 155;
+        --warning: 0.72 0.14 65;
+        --warning-foreground: 0.18 0.04 65;
+    }
+
+    /* Dark mode — keep sidebar dark, lighten main content slightly */
+    .dark {
+        --background: 0.14 0.025 220;
+        --foreground: 0.94 0.010 210;
+
+        --card: 0.18 0.025 220;
+        --card-foreground: 0.94 0.010 210;
+
+        --popover: 0.20 0.025 220;
+        --popover-foreground: 0.94 0.010 210;
+
+        --primary: 0.62 0.12 195;
+        --primary-foreground: 0.14 0.025 220;
+
+        --secondary: 0.26 0.035 220;
+        --secondary-foreground: 0.88 0.012 210;
+
+        --muted: 0.24 0.025 220;
+        --muted-foreground: 0.60 0.020 215;
+
+        --accent: 0.72 0.14 65;
+        --accent-foreground: 0.14 0.04 65;
+
+        --destructive: 0.58 0.22 25;
+        --destructive-foreground: 0.98 0.004 25;
+
+        --border: 0.28 0.030 220;
+        --input: 0.28 0.030 220;
+        --ring: 0.62 0.12 195;
+
+        --chart-1: 0.62 0.14 195;
+        --chart-2: 0.72 0.14 65;
+        --chart-3: 0.58 0.10 240;
+        --chart-4: 0.65 0.18 30;
+        --chart-5: 0.62 0.12 155;
+
+        --sidebar: 0.12 0.030 220;
+        --sidebar-foreground: 0.90 0.012 210;
+        --sidebar-primary: 0.62 0.12 195;
+        --sidebar-primary-foreground: 0.98 0.004 200;
+        --sidebar-accent: 0.72 0.14 65;
+        --sidebar-accent-foreground: 0.14 0.04 65;
+        --sidebar-border: 0.22 0.035 220;
+        --sidebar-ring: 0.62 0.12 195;
+
+        --success: 0.60 0.14 155;
+        --success-foreground: 0.14 0.025 155;
+        --warning: 0.72 0.14 65;
+        --warning-foreground: 0.14 0.04 65;
+    }
+
+    * {
+        @apply border-border;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+        font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+    }
+
+    code, pre, .font-mono {
+        font-family: 'DM Mono', 'Fira Code', 'Cascadia Code', monospace;
+    }
+}

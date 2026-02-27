@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Fan Controller Dashboard project — user is renaming the menu title from 'Fan Controller Dashboard' to 'Dashboard'.",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-in-the-sidebarnav-component-change-the-label-of-the-first-menu-item-from-fan-controller-dashboard-to-dashboard",
+      "title": "In the SidebarNav component, change the label of the first menu item from 'Fan Controller Dashboard' to 'Dashboard'.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [],
+  "gameProjectType": "none",
+  "projectName": "Fan Controller Dashboard",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
